@@ -35,7 +35,7 @@ public class ControladorRecetas {
 			model.addAttribute("nombreReceta", nombre);
 			model.addAttribute("ingredientes", recetasConIngredientes.get(nombre));
 		} else {
-			model.addAttribute("mensaje", "No se encuentra la receta");
+			model.addAttribute("mensaje", "No hay receta disponible todavía");
 		}
 		
 		return "detalleReceta.jsp";
