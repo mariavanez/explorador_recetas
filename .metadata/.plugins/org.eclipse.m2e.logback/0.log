@@ -1,0 +1,628 @@
+2025-01-31 20:16:03,969 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2025-01-31 20:18:09,932 [Worker-13: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com:ExploradorDeRecetasClase:0.0.1-SNAPSHOT @ C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\pom.xml.
+2025-01-31 20:18:19,103 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ExploradorDeRecetasClase/src/main/java
+2025-01-31 20:18:19,114 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ExploradorDeRecetasClase/src/main/resources
+2025-01-31 20:18:19,156 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ExploradorDeRecetasClase/src/main/resources
+2025-01-31 20:18:19,192 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ExploradorDeRecetasClase/src/test/java
+2025-01-31 20:18:19,200 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ExploradorDeRecetasClase/src/test/resources
+2025-01-31 20:18:24,811 [Worker-13: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 23 sec
+2025-01-31 20:18:24,840 [Worker-13: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-01-31 20:18:26,740 [main] ERROR o.e.m2e.editor.pom.MavenPomEditor - InterruptedException
+org.eclipse.core.runtime.CoreException: InterruptedException
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.executeOperation(TextFileDocumentProvider.java:472)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.synchronize(TextFileDocumentProvider.java:1149)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.initializeSourceDocument(MavenPomEditor.java:400)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.addFallbackEditors(MavenPomEditor.java:364)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.addPages(MavenPomEditor.java:337)
+	at org.eclipse.ui.forms.editor.FormEditor.createPages(FormEditor.java:143)
+	at org.eclipse.ui.part.MultiPageEditorPart.createPartControl(MultiPageEditorPart.java:381)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:96)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:977)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:939)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:312)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:90)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:134)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:105)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4941)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:206)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:131)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:73)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:168)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:187)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:654)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:618)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:796)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:401)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1271)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3228)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:3118)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3116)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3086)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3077)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:546)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:506)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:377)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInSpecificEditor(EditorUtility.java:176)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:169)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:288)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:254)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:366)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$3.open(PackageExplorerPart.java:545)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:799)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:796)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1110)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:295)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:330)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4404)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1173)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4202)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3790)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:663)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.InterruptedException: null
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:136)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:76)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:66)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.executeOperation(TextFileDocumentProvider.java:461)
+	... 102 common frames omitted
+Caused by: org.eclipse.core.runtime.OperationCanceledException: null
+	at org.eclipse.core.internal.jobs.ThreadJob.waitForRun(ThreadJob.java:288)
+	at org.eclipse.core.internal.jobs.ThreadJob.joinRun(ThreadJob.java:214)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:95)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:343)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:124)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2407)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2452)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2482)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	... 105 common frames omitted
+2025-01-31 20:18:28,163 [Worker-13: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com:ExploradorDeRecetasClase:0.0.1-SNAPSHOT @ C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\pom.xml.
+2025-01-31 20:18:31,959 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ExploradorDeRecetasClase/src/main/java
+2025-01-31 20:18:31,966 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ExploradorDeRecetasClase/src/main/resources
+2025-01-31 20:18:31,970 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ExploradorDeRecetasClase/src/main/resources
+2025-01-31 20:18:31,974 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ExploradorDeRecetasClase/src/test/java
+2025-01-31 20:18:31,978 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ExploradorDeRecetasClase/src/test/resources
+2025-01-31 20:18:34,536 [Worker-13: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 7,00 sec, update config takes 1,00 sec 
+2025-01-31 20:18:37,952 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-31 20:18:38,009 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:18:38,034 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 20:20:02,750 [Worker-13: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com:ExploradorDeRecetasClase:0.0.1-SNAPSHOT @ C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\pom.xml.
+2025-01-31 20:20:03,946 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:20:03,947 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:20:03,961 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 20:20:05,151 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-31 20:20:05,177 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:20:05,183 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 20:23:39,447 [Worker-6: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com:ExploradorDeRecetasClase:0.0.1-SNAPSHOT @ C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\pom.xml.
+2025-01-31 20:23:40,690 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:23:40,692 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:23:40,699 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 20:27:07,154 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-31 20:27:07,190 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:27:07,195 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 20:30:02,223 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-31 20:30:02,254 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:30:02,268 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 20:34:46,946 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-12.0.15; built: 2024-11-05T19:44:57.623Z; git: 8281ae9740d4b4225e8166cc476bad237c70213a; jvm 21.0.5+11-LTS
+2025-01-31 20:34:47,106 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started oeje8n.ContextHandler$CoreContextHandler@63068cb0{/help,/help,b=null,a=AVAILABLE,h=oeje8n.ContextHandler$CoreContextHandler$CoreToNestedHandler@51993df5{STARTED}}
+2025-01-31 20:34:47,108 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2025-01-31 20:34:47,156 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@50342b42{HTTP/1.1, (http/1.1)}{127.0.0.1:62264}
+2025-01-31 20:34:47,176 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@60505c69{STARTING}[12.0.15,sto=0] @1450626ms
+2025-01-31 20:35:43,372 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-31 20:35:43,380 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:35:43,391 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 20:36:39,431 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-31 20:36:39,444 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:36:39,452 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 20:37:00,278 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:37:00,280 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:37:00,290 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 20:43:58,264 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:43:58,268 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:43:58,277 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 20:44:16,274 [Worker-17: Launching ExploradorDeRecetasClase - ExploradorDeRecetasClaseApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-31 20:44:16,292 [Worker-17: Launching ExploradorDeRecetasClase - ExploradorDeRecetasClaseApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:44:16,301 [Worker-17: Launching ExploradorDeRecetasClase - ExploradorDeRecetasClaseApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 20:48:16,307 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:48:16,309 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:48:16,314 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 20:55:59,645 [Worker-19: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com:ExploradorDeRecetasClase:0.0.1-SNAPSHOT @ C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\pom.xml.
+2025-01-31 20:56:01,610 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:56:01,611 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:56:01,623 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 20:56:02,989 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-31 20:56:03,040 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 20:56:03,045 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 21:04:56,769 [Worker-6: Launching ExploradorDeRecetasClase - ExploradorDeRecetasClaseApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 21:04:56,777 [Worker-6: Launching ExploradorDeRecetasClase - ExploradorDeRecetasClaseApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 21:04:56,786 [Worker-6: Launching ExploradorDeRecetasClase - ExploradorDeRecetasClaseApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 21:38:59,250 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 21:38:59,255 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 21:38:59,262 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 21:39:33,671 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-31 21:39:33,696 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 21:39:33,703 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 21:43:21,208 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-31 21:43:21,231 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 21:43:21,237 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 21:47:35,352 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-31 21:47:35,367 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 21:47:35,372 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 21:48:29,947 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-31 21:48:29,961 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 21:48:29,965 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 21:50:19,275 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-31 21:50:19,287 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 21:50:19,292 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 21:51:17,765 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 21:51:17,766 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 21:51:17,770 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 21:52:33,758 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 21:52:33,759 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 21:52:33,763 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 21:52:38,221 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 21:52:38,223 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 21:52:38,227 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 21:57:14,319 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 21:57:14,321 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 21:57:14,326 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 21:57:48,941 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 21:57:48,943 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 21:57:48,946 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 22:01:02,181 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-31 22:01:02,288 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 22:01:02,297 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 22:01:42,235 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 22:01:42,236 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 22:01:42,241 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 22:05:17,362 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 22:05:17,364 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 22:05:17,370 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 22:06:04,451 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 22:06:04,452 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 22:06:04,455 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 22:07:23,267 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 22:07:23,269 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 22:07:23,275 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 22:11:44,842 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 22:11:44,849 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 22:11:44,855 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 22:12:26,802 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 22:12:26,804 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 22:12:26,811 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 22:22:17,927 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 22:22:17,929 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 22:22:17,934 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-01-31 22:23:55,503 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 22:23:55,506 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-31 22:23:55,509 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-01 00:56:43,998 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-01 00:56:44,002 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-01 00:56:44,007 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-01 00:56:51,805 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@60505c69{STOPPING}[12.0.15,sto=0]
+2025-02-01 00:56:51,823 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@50342b42{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2025-02-01 23:27:32,992 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-02-01 23:30:35,665 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-01 23:30:35,722 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-01 23:30:35,745 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-01 23:30:37,670 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-01 23:30:37,672 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-01 23:30:37,680 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-01 23:41:24,567 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-01 23:41:24,572 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-01 23:41:24,577 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-01 23:42:35,727 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-01 23:42:35,739 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-01 23:42:35,752 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-01 23:47:31,727 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-01 23:47:31,733 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-01 23:47:31,741 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-01 23:50:59,565 [Worker-25: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com:ExploradorDeRecetasClase:0.0.1-SNAPSHOT @ C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\pom.xml.
+2025-02-01 23:51:01,498 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-01 23:51:01,498 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-01 23:51:01,532 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-01 23:52:09,567 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-01 23:52:09,569 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-01 23:52:09,578 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 00:02:51,704 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:02:51,711 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:02:51,711 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 00:04:12,071 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:04:12,074 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2025-02-02 00:04:12,087 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 00:13:15,701 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:13:15,707 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 00:13:15,715 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 00:15:40,699 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:15:40,706 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:15:40,712 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 00:15:50,704 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:15:50,707 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:15:50,713 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 00:17:09,046 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:17:09,062 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 00:17:09,062 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 00:20:17,450 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:20:17,455 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 00:20:17,460 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 00:21:51,312 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:21:51,332 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 00:21:51,332 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 00:23:14,342 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:23:14,345 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 00:23:14,355 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 00:29:28,035 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:29:28,049 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 00:29:28,053 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 00:35:12,993 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:35:12,995 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 00:35:13,001 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 00:37:27,959 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:37:27,962 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 00:37:27,969 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 00:42:52,978 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:42:52,982 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 00:42:52,990 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 00:44:42,771 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:44:42,776 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 00:44:42,785 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 00:54:36,034 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:54:36,041 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 00:54:36,048 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 00:55:56,884 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:55:56,886 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 00:55:56,892 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 00:57:04,287 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:57:04,297 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 00:57:04,297 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 00:58:26,896 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:58:26,900 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 00:58:26,904 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 00:59:19,023 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 00:59:19,025 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 00:59:19,029 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 01:00:02,773 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 01:00:02,773 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 01:00:02,773 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 01:07:28,397 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 01:07:28,402 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 01:07:28,402 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 01:11:10,558 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 01:11:10,558 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 01:11:10,575 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 01:11:51,607 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 01:11:51,609 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 01:11:51,616 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 01:13:15,153 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 01:13:15,155 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 01:13:15,160 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 01:20:32,964 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 01:20:32,964 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 01:20:32,971 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 01:22:56,303 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 01:22:56,306 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 01:22:56,312 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 01:25:40,824 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 01:25:40,824 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 01:25:40,824 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 01:33:26,765 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 01:33:26,765 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 01:33:26,781 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 01:55:18,648 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-12.0.15; built: 2024-11-05T19:44:57.623Z; git: 8281ae9740d4b4225e8166cc476bad237c70213a; jvm 21.0.5+11-LTS
+2025-02-02 01:55:18,848 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started oeje8n.ContextHandler$CoreContextHandler@7dea9ea1{/help,/help,b=null,a=AVAILABLE,h=oeje8n.ContextHandler$CoreContextHandler$CoreToNestedHandler@2e352b80{STARTED}}
+2025-02-02 01:55:18,853 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2025-02-02 01:55:18,916 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@715e6a6{HTTP/1.1, (http/1.1)}{127.0.0.1:63555}
+2025-02-02 01:55:18,973 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@181c7a5c{STARTING}[12.0.15,sto=0] @8943504ms
+2025-02-02 01:59:48,794 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 01:59:48,801 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 01:59:48,807 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:07:13,378 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:07:13,390 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:07:13,401 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:18:28,842 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:18:28,842 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:18:28,858 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:19:05,325 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:19:05,325 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:19:05,325 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:20:33,582 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:20:33,584 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:20:33,589 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:22:18,558 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:22:18,558 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:22:18,558 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:29:32,844 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:29:32,850 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:29:32,852 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:29:48,255 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:29:48,258 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2025-02-02 02:29:48,281 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:31:25,236 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:31:25,240 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:31:25,248 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:31:44,683 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:31:44,687 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:31:44,693 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:32:01,798 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:32:01,803 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:32:01,808 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:32:12,820 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:32:12,823 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:32:12,829 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:32:21,159 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:32:21,162 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:32:21,167 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:32:28,807 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:32:28,810 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:32:28,816 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:34:03,334 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:34:03,334 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:34:03,345 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:34:50,199 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:34:50,202 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:34:50,206 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:36:50,563 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:36:50,563 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:36:50,572 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:36:56,908 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:36:56,911 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:36:56,922 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:37:03,789 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:37:03,793 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:37:03,803 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:37:34,580 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:37:34,583 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:37:34,592 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:39:37,485 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:39:37,488 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:39:37,492 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:39:51,300 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:39:51,300 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:39:51,300 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:40:23,292 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:40:23,295 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:40:23,299 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:43:55,471 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:43:55,476 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:43:55,482 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:45:00,801 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:45:00,810 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:45:00,815 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:51:27,759 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:51:27,770 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:51:27,774 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:53:03,105 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:53:03,115 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:53:03,117 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:54:05,589 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:54:05,593 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:54:05,595 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:55:54,625 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:55:54,629 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:55:54,636 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 02:58:39,231 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 02:58:39,231 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 02:58:39,243 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:00:21,565 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:00:21,567 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 03:00:21,570 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:03:00,524 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:03:00,536 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 03:03:00,536 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:05:21,997 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:05:22,000 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:05:22,004 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:06:06,145 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:06:06,147 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:06:06,147 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:06:37,508 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:06:37,511 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:06:37,515 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:08:28,498 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:08:28,498 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:08:28,505 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:09:43,292 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:09:43,295 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:09:43,299 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:10:40,783 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:10:40,786 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:10:40,790 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:11:47,977 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:11:47,981 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:11:47,985 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:12:57,061 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:12:57,064 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:12:57,068 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:13:30,364 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:13:30,367 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:13:30,371 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:13:34,232 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:13:34,237 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:13:34,241 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:13:40,670 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:13:40,673 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:13:40,678 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:13:45,463 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:13:45,468 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:13:45,473 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:13:49,805 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:13:49,808 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:13:49,813 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:13:54,215 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:13:54,217 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:13:54,221 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:14:30,754 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:14:30,756 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 03:14:30,763 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:14:56,773 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:14:56,775 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:14:56,779 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:15:41,910 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:15:41,913 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:15:41,916 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:16:35,956 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:16:35,959 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:16:35,962 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:19:05,168 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:19:05,171 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 5 resources from src\main\resources to target\classes
+2025-02-02 03:19:05,188 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:19:36,136 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:19:36,138 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:19:36,142 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:20:45,546 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:20:45,549 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:20:45,553 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:23:41,846 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:23:41,849 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 03:23:41,854 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:25:57,853 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:25:57,853 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 03:25:57,869 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:30:02,275 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:30:02,279 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 03:30:02,284 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:43:58,206 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:43:58,212 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 03:43:58,219 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 03:53:05,821 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 03:53:05,831 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 03:53:05,835 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 04:04:23,152 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 04:04:23,152 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 04:04:23,168 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 04:14:01,974 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 04:14:01,977 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 04:14:01,977 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 04:30:20,723 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 04:30:20,727 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 04:30:20,736 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 04:30:30,582 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 04:30:30,585 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-02 04:30:30,596 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 05:16:48,309 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 05:16:48,315 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 05:16:48,320 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 05:43:59,421 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 05:43:59,431 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 05:43:59,439 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 05:57:10,363 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 05:57:10,368 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 05:57:10,377 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 06:04:16,548 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 06:04:16,555 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-02-02 06:04:16,577 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 06:16:03,252 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 06:16:03,260 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 06:16:03,264 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 06:18:23,094 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 06:18:23,106 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 06:18:23,106 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 06:20:29,367 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 06:20:29,372 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 06:20:29,378 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 06:23:39,163 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 06:23:39,179 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 06:23:39,179 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 06:27:59,471 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 06:27:59,480 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 06:27:59,487 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 06:31:21,854 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 06:31:21,856 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 06:31:21,861 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 06:35:48,286 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 06:35:48,291 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 06:35:48,297 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 06:42:09,901 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 06:42:09,910 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 06:42:09,914 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 06:45:58,370 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 06:45:58,374 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 06:45:58,377 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 06:48:49,875 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 06:48:49,875 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 06:48:49,875 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 06:52:11,632 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 06:52:11,632 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 06:52:11,632 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 06:57:40,848 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 06:57:40,852 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 06:57:40,856 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 07:04:56,523 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 07:04:56,527 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 07:04:56,532 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 07:05:00,532 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 07:05:00,536 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 07:05:00,542 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 07:05:21,357 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 07:05:21,361 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 07:05:21,369 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 07:05:39,068 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 07:05:39,072 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 7 resources from src\main\resources to target\classes
+2025-02-02 07:05:39,092 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 07:13:35,124 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 07:13:35,131 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 07:13:35,139 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 07:13:38,990 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 07:13:38,994 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 07:13:39,000 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 07:27:54,319 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 07:27:54,335 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 07:27:54,339 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 07:32:41,645 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-02 07:32:41,655 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-02 07:32:41,655 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\borge\Downloads\Cursos\Bootcamp Fullstack Java\JAVA\Coding Dojo - Core JAVA\Spring\Explorador de Recetas\ExploradorDeRecetasClase\src\test\resources
+2025-02-02 07:36:26,236 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@181c7a5c{STOPPING}[12.0.15,sto=0]
+2025-02-02 07:36:26,255 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@715e6a6{HTTP/1.1, (http/1.1)}{127.0.0.1:0}

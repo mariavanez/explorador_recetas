@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Header: Encabezado */
+
+.encabezado {
+	background-color: #F5793B;
+	width: 100%;
+	height: 70px;
+}
+
+.logo-contenedor, .enlace {
+	display: flex;
+	gap: 12px;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+#logo-img {
+	width: 50px;
+	height: 60px;
+	margin-top: 2px;
+	filter: brightness(0) saturate(100%) invert(74%) sepia(92%) saturate(1207%) hue-rotate(356deg) brightness(102%) contrast(107%);
+}
+
+.logo-nombre {
+	font-family: "Englebert", serif;
+	color: white;
+	font-size: 40px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+/* Contenido */
+.recetas-titulo {
+	font-family: "Roboto", serif;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.contenido {
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+	font-family: "Roboto", serif;
+	text-align: center;
+}
+
+.contenido2 {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	font-family: "Roboto", serif;
+	gap: 20px;
+}
+
+
+.tarjeta, .tarjeta2 {
+	background-color: lightgray;
+	border-radius: 20px;
+	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+    width: 350px;
+	padding: 15px;
+    display: flex;
+	flex-direction: column;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.contenido-tarjeta2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	gap: 20px;
+}
+
+.carousel-inner, .imagen-tarjeta {
+	width: 320px !important;
+	height: 200px !important;
+	position: static !important;
+}
+
+.carousel-item img, .ingrediente-imagen {
+	width: 320px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.boton, .boton2 {
+	background-color: #F5793B;
+	border-radius: 4px;
+	font-size: 16px;
+	transition: 0.3s ease;
+	width: 200px;
+	height: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.boton2 {
+	margin-bottom: 20px;
+}
+
+.enlace2 {
+	text-decoration: none;
+	color:white;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 36px;
+}
+
+.boton:hover, .boton2:hover{
+	background-color: #FFCB00;
+}
+
+.enlace2:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.enlace:hover {
+	text-decoration: none;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+	filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7500%) hue-rotate(59deg) brightness(89%) contrast(111%);
+}
+
+/* MediaQueries */
+
+/* Pantalla de hasta 768px (móviles y tabletas) */
+@media (max-width: 768px) {
+    .encabezado {
+        height: 60px;  
+    }
+
+    .logo-contenedor {
+        gap: 8px;  
+    }
+
+    #logo-img {
+        width: 40px;  
+        height: 50px; 
+    }
+
+    .logo-nombre {
+        font-size: 30px;
+    }
+
+    .contenido {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tarjeta {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .carousel-inner, .imagen-tarjeta {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 200px; 
+    }
+
+    .boton, .boton2 {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .recetas-titulo {
+        font-size: 24px;
+    }
+}
+

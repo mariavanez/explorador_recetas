@@ -1,0 +1,8 @@
+package com.maria.controladores;
+
+public class ControladorRecetas {
+	
+	private static String[] listaRecetas = {"Pizza", "Espagueti", "Lasaña"};
+	private static HashMap<String, String []> recetasConIngredientes = new HashMap<String, String[]>();
+
+}
