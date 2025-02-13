@@ -25,29 +25,34 @@
 		</div>
 	</header>
 
-	<c:if test="${not empty nombreReceta}">
-		<h1 class="recetas-titulo">Ingredientes para ${nombreReceta}</h1>
-
-		<main class="contenido2">
-			<div class="contenido-tarjeta2">
-				<c:forEach var = "ingrediente" items = "${ingredientes}">
-					<div class="tarjeta2">
-						<div class="imagen-tarjeta">
-							<img src="/img/${ingrediente}.png" alt="${ingrediente} imagen" class="ingrediente-imagen">
+	<c:choose>
+		<c:when test="${not empty nombreReceta}">
+			<h1 class="recetas-titulo">Ingredientes para ${nombreReceta}</h1>
+			<main class="contenido2">
+				<div class="contenido-tarjeta2">
+					<c:forEach var="ingrediente" items="${ingredientes}">
+						<div class="tarjeta2">
+							<div class="imagen-tarjeta">
+								<img src="/img/${ingrediente}.png" alt="${ingrediente} imagen" class="ingrediente-imagen">
+							</div>
+							<h3>${ingrediente}</h3>
 						</div>
-						<h3>${ingrediente}</h3>
-					</div>
-				</c:forEach>
-			</div>
-
+					</c:forEach>
+				</div>
+				<button class="boton2">
+					<a href="/recetas" class="enlace2">Volver a Inicio</a>
+				</button>
+			</main>
+		</c:when>
+		
+		<c:otherwise>
+			<div class="contenido2">
+			<h2 class="recetas-titulo">${mensaje}</h2>
 			<button class="boton2">
 				<a href="/recetas" class="enlace2">Volver a Inicio</a>
 			</button>
-		</main>
-	</c:if>
-	<c:if test="${empty nombreReceta}">
-		<h2 class="recetas-titulo">${mensaje}</h2>
-	</c:if>
-	
+			</div>
+		</c:otherwise>
+	</c:choose>
 </body>
 </html>

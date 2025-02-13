@@ -1,0 +1,58 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Receta de ${nombreReceta}</title>
+	<link rel="stylesheet" href="/css/style.css" type="text/css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Englebert&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<header class="encabezado">
+		<div class="logo-contenedor">
+			<a href="/recetas" class="enlace">
+				<img src="/img/logo-3.png" alt="caseras-logo" id="logo-img">
+				<h2 class="logo-nombre">Caseras</h2>
+			</a>
+		</div>
+	</header>
+
+	<c:choose>
+		<c:when test="${not empty nombreReceta}">
+			<h1 class="recetas-titulo">Ingredientes para ${nombreReceta}</h1>
+			<main class="contenido2">
+				<div class="contenido-tarjeta2">
+					<c:forEach var="ingrediente" items="${ingredientes}">
+						<div class="tarjeta2">
+							<div class="imagen-tarjeta">
+								<img src="/img/${ingrediente}.png" alt="${ingrediente} imagen" class="ingrediente-imagen">
+							</div>
+							<h3>${ingrediente}</h3>
+						</div>
+					</c:forEach>
+				</div>
+				<button class="boton2">
+					<a href="/recetas" class="enlace2">Volver a Inicio</a>
+				</button>
+			</main>
+		</c:when>
+		
+		<c:otherwise>
+			<div class="contenido2">
+			<h2 class="recetas-titulo">${mensaje}</h2>
+			<button class="boton2">
+				<a href="/recetas" class="enlace2">Volver a Inicio</a>
+			</button>
+			</div>
+		</c:otherwise>
+	</c:choose>
+</body>
+</html>
